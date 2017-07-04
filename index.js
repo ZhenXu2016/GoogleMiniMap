@@ -5,7 +5,7 @@ const app = express()
 const PORT_NUMBER = 8080
 
 app.get('/', function(req, res) {
-  res.sendFile(path.join(_dirname + '/templates/GoogleMiniMap.html'));
+  res.sendFile(path.join(__dirname + '/templates/GoogleMiniMap.html'));
 })
 
 app.listen(PORT_NUMBER, function() {
