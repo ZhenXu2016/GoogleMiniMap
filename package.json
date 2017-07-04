@@ -3,15 +3,15 @@
   "version" : "1.0.0",
   "description": "This is the Google MiniMap project repo.",
   "main": "index.js",
-  "script": {
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "'/build_css.sh && node index.js"
+    "server": "./build_css.sh && node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ZhenXu2016/GoogleMiniMap.git"
   },
-  "author": "Zhen Xu",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ZhenXu2016/GoogleMiniMap/issues"
