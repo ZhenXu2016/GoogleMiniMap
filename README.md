@@ -1,2 +1,2 @@
 # GoogleMiniMap
-Create a website provide location based search service as Google map
+This is fullstack web project that create a website provide location based search service as Google map.
