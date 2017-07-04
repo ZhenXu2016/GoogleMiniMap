@@ -9,5 +9,5 @@ app.get('/', function(req, res) {
 })
 
 app.listen(PORT_NUMBER, function() {
-  consolo.log('Google Mini Map website listening on port ' + PORT_NUMBER + '!')
+  console.log('Google Mini Map website listening on port ' + PORT_NUMBER + '!')
 })
