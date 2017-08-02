@@ -57,6 +57,11 @@ $(function() {
         });
       }
     });
+
+    $('.place-info-visibility-toggle').on('click', function() {
+      $('#place-info-wrapper').toggleClass('visible');
+      $('#place-info-wrapper .triangle-icon').toggleClass('left');
+    }); 
   }
 
   function showDetailedInfo(place) {
@@ -69,7 +74,8 @@ $(function() {
       $('.place-name').text(place['name']);
       $('.place-review-score').text(place['rating']);
       $('.place-type').text(place['types'][0]);
-      $('#place-info-wrapper').show();
+      $('#place-info-wrapper').addClass('visible');
+      $('#place-info-wrapper').addClass('is-active');
     });
   }
 
