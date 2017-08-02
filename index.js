@@ -4,7 +4,7 @@ const request = require('request');
 const app = express();
 
 const PORT_NUMBER = 8080;
-const GOOGLE_API_KEY = 'AIzaSyBNtLj7PjM_YoBg6k7ioydVV9EwEc6m8oA';
+const GOOGLE_KEY = 'AIzaSyBNtLj7PjM_YoBg6k7ioydVV9EwEc6m8oA';
 const NEARBY_SEARCH_URL = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json';
 
 app.get('/', function(req, res) {
@@ -15,7 +15,7 @@ app.get('/nearby_search', function(req, api_res) {
   var radius = req.query.radius? req.query.radius : 150;
   
   var params = {
-    'key': GOOGLE_API_KEY,
+    'key': GOOGLE_KEY,
     'location': req.query.location,
     'radius': radius,
     'type': req.query.type
